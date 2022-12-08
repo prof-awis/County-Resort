@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scripting using JavaScript</title>
+    <script language="JavaScript">
+        // document.write("<h1>Welcome to JavaScript Class</h1>")
+        // var myname=prompt("What is your name")
+        // alert("My name is " +myname)
+
+        var num1=prompt("Enter first value: ")
+        var num2=prompt("Enter second value: ")
+        var sum=parseInt(num1)+parseInt(num2)
+        document.write("The sum is: " +sum)
+
+        var uprice = prompt("Enter the unit price: ")
+        var qty = prompt("How many items? ")
+        var cost, discount, payable
+        cost = uprice * qty
+
+        if (cost > 10000) {
+            discount = cost * 0.1
+        } else {
+            discount = 0
+        }
+        payable = cost - discount
+        document.write("Cost= " + cost)
+        document.write("<p>Discount= " + discount)
+        document.write("<p>Amount Payable= " + payable)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

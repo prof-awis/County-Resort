@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title> Switching Images </title>
+
+	<style>
+	img 
+	{
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	left: 300px;
+	}
+
+	.two
+	{
+	animation-name: moving;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	}
+
+	@keyframes moving
+	{
+	0% {opacity: 0;}
+	33% {opacity: 0.33;}
+	66% {opacity: 0.66;}
+	100% {opacity: 1;}
+	}
+
+	</style>
+</head>
+
+<body>
+
+	<div id = "switch">
+	
+	<img class = "one" src = "dining.jpg">
+	<img class = "two" src = "bar2.jpg">	
+
+	<div>
+
+</body>
+
+</html>

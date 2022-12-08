@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ring{
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px black;
+            animation: ring 2s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes ring{
+            0%{
+                transform: rotate(0deg);
+                box-shadow: 1px 5px 2px #e65c00;
+            }
+            50%{
+                transform: rotate(180deg);
+                box-shadow: 1px 5px 2px #18b201;
+            }
+            100%{
+                transform: rotate(360deg);
+                box-shadow: 1px 5px 2px #0456c8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ring"></div>
+</body>
+</html>

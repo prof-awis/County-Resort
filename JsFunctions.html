@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript functions</title>
+
+    <script language="javasCript" type="text/javascript">
+        function Sum() {
+            // document.calc.textout.value=parseInt(document.calc.textone.value) + parseInt(document.calc.texttwo.value)
+
+            if (document.calc.operator[0].checked) {
+                document.calc.textout.value = parseInt(document.calc.textone.value) + parseInt(document.calc.texttwo
+                    .value)
+            } else if (document.calc.operator[1].checked) {
+                document.calc.textout.value = parseInt(document.calc.textone.value) - parseInt(document.calc.texttwo
+                    .value)
+            } else if (document.calc.operator[2].checked) {
+                document.calc.textout.value = parseInt(document.calc.textone.value) * parseInt(document.calc.texttwo
+                    .value)
+            } else {
+                document.calc.textout.value = parseInt(document.calc.textone.value) / parseInt(document.calc.texttwo
+                    .value)
+            }
+        }
+
+        function home() {
+            if (document.log.user.value == "Brian" && document.log.pass.value == "Cynthia"); {
+                alert("Login Successful")
+                window.location = "home.html"
+            }
+
+        }
+    </script>
+</head>
+
+<body bgcolor="gold">
+    <h1> JavaScript controls </h1>
+    <form action="" name="calc">
+        Operations <br>
+        <input type="radio" name="operator" id="">Add <br>
+        <input type="radio" name="operator" id="">Subtract <br>
+        <input type="radio" name="operator" id="" checked>Multiply <br>
+        <input type="radio" name="operator" id="">Divide <br><br>
+
+        Num1 <input type="text" name="" id="textone"><br><br>
+        Num2 <input type="text" name="" id="texttwo"><br><br>
+        Output <input type="text" name="" id="textout"><br><br>
+
+        <input type="button" value="Execute" onclick="Sum()">
+    </form>
+
+    <form action="" name="log">
+        <br>
+        User name <input type="text" name="user" id=""><br><br>
+        Password <input type="password" name="pass" id=""><br><br>
+        <input type="button" value="Log in" onclick="home()">
+    </form>
+</body>
+
+</html>

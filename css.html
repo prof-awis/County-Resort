@@ -1,0 +1,68 @@
+<html>
+
+<head>
+	<title>Cascading style sheets</title>
+	<style>
+		body {
+			background-color: cyan;
+		}
+
+		.one {
+			font-size: 25;
+			color: yellow;
+			background-color: green;
+			border-style: double;
+			font-family: arial;
+		}
+
+		#two {
+			text-align: center;
+			font-size: 25;
+			color: yellow;
+			background-color: green;
+			border-style: double;
+			font-family: arial;
+			height: 30px;
+			width: 500px;
+			margin: auto;
+			animation: rotating 0s linear infinite;
+		}
+
+		@keyframes rotating {
+			from {
+				transform: rotateY(0deg);
+			}
+
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+
+		#two:hover {
+			cursor: pointer;
+			animation-play-state: paused;
+		}
+
+		p::first-line {
+			color: green;
+			font-size: 24px;
+			background-color: navy;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="one">CASCADING STYLE SHEET</h1>
+
+	<p>CSS is used to control the style of the web document in a simple and easy way. It improves the outlook of the web
+		documents beyond what html alone can provide.</p>
+
+	<p>It was accepted by the <b class="one">world wide web consotium</b> as a means through which web documents can be
+		made elegant for the viewers</p>
+
+	<div id="two">
+		Multimedia University of Kenya
+	</div>
+</body>
+
+</html>
